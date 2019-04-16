@@ -232,6 +232,27 @@ config ARCH_MSM8916
 	  This enables support for the MSM8916 chipset. If you dont
 	  know what do here, say N
 
+config MACH_ASUS_ZC550KL
+	bool "Enable Support for zc550kl"
+	depends on ARCH_MSM8916
+	help
+	  This enables support for the Asus ZC550KL. If you dont
+	  know what do here, say N
+
+config MACH_ASUS_Z010D
+	bool "Enable Support for zc550kl Z010D (msm8916)"
+	depends on MACH_ASUS_ZC550KL
+	help
+	  This enables support for the Asus Z010D. If you dont
+	  know what do here, say N
+
+config MACH_ASUS_Z010DD
+	bool "Enable Support for zc550kl Z010DD (msm8939)"
+	depends on MACH_ASUS_ZC550KL
+	help
+	  This enables support for the Asus Z010DD. If you dont
+	  know what do here, say N
+
 config ARCH_MSM8994
 	bool "Enable Support for Qualcomm MSM8994"
 	depends on ARCH_MSM
